@@ -1,6 +1,6 @@
 class StudentsController < ApplicationController
   
-  before 
+  before_action :set_student
   
   def index
     @students = Student.all
